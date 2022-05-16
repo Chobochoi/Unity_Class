@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class NewBehaviourScript : MonoBehaviour
 {
     // Awake 함수는 Start 함수 이전에 한 번만 호출되는 함수입니다.
@@ -13,7 +14,13 @@ public class NewBehaviourScript : MonoBehaviour
     // Start 함수도 게임 시작할 때 한 번만 호출되는 함수입니다.
     void Start()
     {
-        Debug.Log("Start 함수입니다.");
+        // 호출할 함수의 이름, 몇 초 후에 함수를 실행할 것인지, 몇 초 마다 반복할 것인지 설정합니다
+        InvokeRepeating("AutoMove", 0, 1);
+        
+        
+       // Debug.Log("Start 함수입니다.");
+
+
 
         // 자기 자신의 위치를 설정합니다.
         /*
@@ -29,7 +36,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Time.deltaTime);
+        
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -57,6 +64,19 @@ public class NewBehaviourScript : MonoBehaviour
             transform.position += Vector3.right * Time.deltaTime;
         }
 
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            CancelInvoke("AutoMove");
+        }
 
+        
     }
+    public void AutoMove()
+    {
+        transform.position = new Vector3(Random.Range(0, 5), 0, Random.Range(0, 5));
+
+        Debug.Log("생성");
+    }
+
+
 }
