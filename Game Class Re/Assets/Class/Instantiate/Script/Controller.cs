@@ -23,34 +23,10 @@ public class Controller : MonoBehaviour
 
       transform.Translate(dir.normalized * Time.deltaTime * speed);
 
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            transform.position += new Vector3
-                (
-                transform.position.x,
-                3,
-                transform.position.z
-                );
-        }
-
+    
         
     }
-    // 물리적인 충돌을 했을 때 동작하는 함수.
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Collision");
-    }
+   
 
-    
-    //물리적인 충돌을 하고 있을 때 동작하는 함수.
-    private void OnCollisionStay(Collision collsion)
-    {
-        Debug.Log("Stay");
-    }
 
-    // 물리적인 충돌을 벗어났을 때
-    private void OnCollisionExit(Collision collsion)
-    {
-        Debug.Log("Exit");
-    }
 }
