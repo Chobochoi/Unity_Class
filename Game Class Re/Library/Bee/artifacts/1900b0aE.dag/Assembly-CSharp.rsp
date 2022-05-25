@@ -349,6 +349,7 @@
 "Assets/Class/Instantiate/Script/Dead.cs"
 "Assets/Class/Instantiate/Script/SkyProperty.cs"
 "Assets/Class/Navmesh/Script/NavControll.cs"
+"Assets/Class/UI Animation/Script/PopUp.cs"
 "Assets/InvokeFunction/Script/NewBehaviourScript.cs"
 "Assets/InvokeFunction/Script/ObjectMove.cs"
 "Assets/RayCast/Script/DataManager.cs"

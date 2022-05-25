@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class/Navmesh/Sence/NavmeshExample.unity
+- path: Assets/Class/UI Animation/Scene/UI Animation.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
