@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class/UI Animation/Scene/UI Animation.unity
+- path: Assets/Class/Cinemachine/CinemachineExample.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
