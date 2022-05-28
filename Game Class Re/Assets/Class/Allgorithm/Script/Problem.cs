@@ -31,34 +31,34 @@ public class Problem : MonoBehaviour
          answer.text = value;
      */
 
-    //회문 판별 코드
-    //0  1  2  3  4
-    //[] [] [] [] []
-    // 0 = 4, 1 = 3 비교
-    /*for(int i = 0; i < variable.Length / 2; i++)
+    
+
+    private void Start()
+    {
+        //회문 판별 코드
+        //0  1  2  3  4
+        //[] [] [] [] []
+        // 0 = 4, 1 = 3 비교
+        for (int i = 0; i < variable.Length / 2; i++)
         {
             if (variable[i] == variable[variable.Length - i - 1])
             {
                 result++;
             }
-           
+
         }
-    if(result == variable.Length / 2)
+        if (result == variable.Length / 2)
         {
             answer.text = "회문";
-               
+
         }
         else
         {
             answer.text = "회문이 아님";
         }
-    */
 
-    private void Start()
-    {
-    
     }
-       
-    
+
+
 
 }
