@@ -656,8 +656,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 319012220}
-  variable: sadfadsf
-  result: 0
+  input: 
+  condition: 0
+  array: 0000000000000000000000000000000000000000
 --- !u!4 &1961761150
 Transform:
   m_ObjectHideFlags: 0
