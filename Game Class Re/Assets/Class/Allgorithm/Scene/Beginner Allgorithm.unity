@@ -174,7 +174,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Answer
 --- !u!222 &319012221
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -656,9 +656,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 319012220}
-  input: 
-  condition: 0
-  array: 0000000000000000000000000000000000000000
+  input: 5
+  result: 
 --- !u!4 &1961761150
 Transform:
   m_ObjectHideFlags: 0

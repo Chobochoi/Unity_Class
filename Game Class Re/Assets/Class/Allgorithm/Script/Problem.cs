@@ -8,8 +8,8 @@ public class Problem : MonoBehaviour
     public Text answer;
 
     public string input ;
-    public bool condition;
-    public int [] array;
+    public string result;
+
 
     // °úÀ×¼ö ÄÚµå
     /*    for(int i = 0; i < variable; i++)
@@ -105,11 +105,32 @@ else
             Debug.Log(array[i]);
         }*/
 
+    // ÆÑÅä¸®¾ó
+    /*
+     * int Factorial(int num)
+    {
+        if(num == 1)
+            return 1;
+        else
+        {
+            return num * Factorial(num - 1);
+        }
+
+    }
+   
+        int num = 5;
+        int result = 0;
+
+        result = Factorial(num);
+     */
+
+
+
+
     private void Start()
     {
-       
-    }
 
+    }
     private void Update()
     {
         
