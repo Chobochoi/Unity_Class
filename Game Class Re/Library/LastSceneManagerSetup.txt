@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class/NavMeshObstacle/NavMesh Obstacle Example.unity
+- path: Assets/Class/Allgorithm/Scene/Beginner Allgorithm.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

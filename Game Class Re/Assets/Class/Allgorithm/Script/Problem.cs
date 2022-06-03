@@ -8,7 +8,7 @@ public class Problem : MonoBehaviour
     public Text answer;
 
     public string input ;
-    public string result;
+    public string[] array;
 
 
     // 과잉수 코드
@@ -124,12 +124,39 @@ else
         result = Factorial(num);
      */
 
+    /* 나머지로 떨어진 수의 갯수 구하기
+     * 1. 5개의 수를 입력 받습니다.
+     * for(int i = 0; i < array.Length; i++)
+        {
+            array[i] = array[i] % 36;
+        }
+
+        for(int i = 0; i < array.Length; i++)
+        {
+            int count = 0;
+
+            for(int j = i +1; j <array.Length; j++)
+            {
+                if(array[i] == array[j])
+                {
+                    count++;
+                }
+            }
+            if(count == 0)
+            {
+                result++
+            }
+            answer.text = result.ToString();
+        }
+     */
 
 
 
     private void Start()
     {
+        
 
+        
     }
     private void Update()
     {
