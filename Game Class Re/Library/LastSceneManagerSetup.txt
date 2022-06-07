@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class/Terrain/Terrain.unity
+- path: Assets/Class/Mouse Drag/Mouse Drag Example.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
