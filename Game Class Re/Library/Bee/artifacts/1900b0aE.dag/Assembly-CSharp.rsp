@@ -359,6 +359,8 @@
 "Assets/Class/RayCast/Script/MoveLerp.cs"
 "Assets/Class/RayCast/Script/Picking.cs"
 "Assets/Class/RayCast/Script/Revolution.cs"
+"Assets/Class/Rotation/Script/CharatorControl.cs"
+"Assets/Class/Rotation/Script/Follow.cs"
 "Assets/Class/UI Animation/Script/PopUp.cs"
 "Assets/Collision Example/Script/CharatorControll.cs"
 "Assets/InvokeFunction/Script/NewBehaviourScript.cs"
