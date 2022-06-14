@@ -5,6 +5,7 @@ using UnityEngine;
 public class Control : MonoBehaviour
 {
     public int count = 0;
+    public Animator animator;
 
     void Update()
     { 
@@ -24,4 +25,15 @@ public class Control : MonoBehaviour
             
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Tire Stack")
+        {
+            animator.SetTrigger("Death");
+        }
+    }
+
+    
+
 }
