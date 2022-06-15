@@ -8,9 +8,10 @@ public class Control : MonoBehaviour
     public Animator animator;
 
     void Update()
-    { 
-           
-        if(Input.GetKeyDown(KeyCode.LeftArrow) && count > -2)
+    {
+        if (GameManager.instance.condition == false) return;
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && count > -2)
         {
             count--;
             transform.position += Vector3.left;
@@ -30,6 +31,7 @@ public class Control : MonoBehaviour
     {
         if(collision.gameObject.tag == "Tire Stack")
         {
+            GameManager.instance.condition = false;
             animator.SetTrigger("Death");
         }
     }

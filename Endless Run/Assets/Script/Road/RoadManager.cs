@@ -30,6 +30,8 @@ public class RoadManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.instance.condition == false) return;
+
         RoadMove();
     }
 
