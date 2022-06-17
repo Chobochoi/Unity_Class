@@ -12,14 +12,14 @@ public class RoadManager : MonoBehaviour
     Vector3 nextRoad = Vector3.zero;
 
     int firstRoad, lastRoad = 0;
-    
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
         roadList = new List<GameObject>();
 
-        for(int i = 0; i<3; i++)
+        for (int i = 0; i<3; i++)
         {
             roadList.Add(Instantiate(road, nextRoad, Quaternion.identity));
             nextRoad += Vector3.forward * 36f;
@@ -38,7 +38,7 @@ public class RoadManager : MonoBehaviour
     void RoadMove()
     {
         // 도로의 0, 1, 2번째 배열로 설정        
-        for(int i = 0; i < roadList.Count; i++)
+        for (int i = 0; i < roadList.Count; i++)
         {
             // 리스트에 저장되어 있는 도로 전체를 Translate를 이용해서 Vector3.back 방향으로 이동
             roadList[i].transform.Translate(-Vector3.forward * speed * Time.deltaTime);

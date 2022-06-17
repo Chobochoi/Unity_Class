@@ -5,7 +5,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public Animator animator;
-    
+
     public float speed = 5.0f;
 
 
@@ -13,14 +13,14 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
         if (GameManager.instance.condition == false) return;
-        
+
         transform.Translate(Vector3.back * speed * Time.deltaTime);
-     
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             animator.enabled = true;
         }

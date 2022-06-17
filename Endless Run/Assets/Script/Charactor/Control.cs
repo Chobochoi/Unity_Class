@@ -15,27 +15,25 @@ public class Control : MonoBehaviour
         {
             count--;
             transform.position += Vector3.left;
-            
-            
+
+
         }
 
-        if(Input.GetKeyDown(KeyCode.RightArrow) && count < 2)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && count < 2)
         {
             count++;
             transform.position += Vector3.right;
-            
+
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Tire Stack")
+        if (collision.gameObject.tag == "Tire Stack")
         {
             GameManager.instance.condition = false;
             animator.SetTrigger("Death");
+            UIManager.instance.UIActive();
         }
     }
-
-    
-
 }

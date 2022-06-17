@@ -5,10 +5,10 @@ using UnityEngine;
 public class ObstacleCreate : MonoBehaviour
 {
     public GameObject obstacle;
-    
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.name == "Charactor")
+        if (other.name == "Charactor")
         {
             ObjectPooling.objectPool.GetQueue();
         }

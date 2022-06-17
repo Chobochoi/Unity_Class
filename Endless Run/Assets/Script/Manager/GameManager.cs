@@ -9,16 +9,16 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public bool condition = true;
-    
+
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
 
             // 씬이 전환되더라도 파괴되지 않고 유지할 수 있도록 설정
             DontDestroyOnLoad(instance);
-        
+
         }
 
         else
@@ -27,5 +27,4 @@ public class GameManager : MonoBehaviour
             Destroy(instance);
         }
     }
-
 }
